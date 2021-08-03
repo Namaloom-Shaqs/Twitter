@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+
+:root{
+
+--font: 'Oswald', sans-serif;
+--color:#1da1f2;
+--H-color:#0f1419;
+--F-color:#536471;
+}
+
+*{
+margin: 0;
+padding: 0;
+
+
+}
+
+.banner{
+
+height: 90vh;
+width: 100%;
+display: flex;
+}
+
+.left-banner{
+height: 90vh;
+width: 50%;
+background: url(twitter1.png) ;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+
+
+.right-banner{
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    }
+
+
+.heading{
+margin-left: 30px;
+font-family: var(--font);
+color: var(--H-color);
+}
+
+.heading h1{
+font-size: 90px;
+margin-top: 40px;
+
+}
+
+.heading h3{
+    font-size: 40px;
+    margin-top: 40px;
+    
+    }
+
+.heading .buttons{
+margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.buttons #btn-1{
+height: 50px;
+width:70%;
+border: none;
+border-radius: 40px;
+background-color: var(--color);
+color: white;
+font-weight: bolder;
+font-size: 15px;
+}
+
+.buttons #btn-2{
+
+    margin-top:20px ;
+    height: 50px;
+    width: 70%;
+    border: 1px solid var(--color);
+    border-radius: 40px;
+    color: var(--color);
+    font-weight: bolder;
+    font-size: 15px;
+    background: white;
+    transition: all 0.2s ease-in;
+}
+
+#btn-1:hover{
+background-color:#1c92db;
+cursor: pointer;
+
+}
+#btn-2:hover{
+background-color:#e1ecf3;
+
+    cursor: pointer;
+    
+    }
+
+                                         /* Footer */
+
+ 
+.footer{
+
+height: 10vh;
+width: 100%;
+/* text-align: center; */
+display: flex;
+flex-wrap: wrap;
+justify-content:center;
+align-items: center;
+
+}
+
+
+.footer a{
+    padding: 6px;
+text-decoration: none;
+color:var(--F-color);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+margin: 6px;
+}
+
+
+.footer  span{
+text-decoration: none;
+color:var(--F-color);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+margin: 10px;
+}
+footer a:hover{
+
+text-decoration: underline;
+
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+ 
+
+
+
+
+.banner{
+
+display: flex;
+flex-direction: column-reverse;
+height: 120vh;
+}
+.right-banner{
+height: 150vh;
+width: 100%;
+
+}
+
+.left-banner{
+
+height: 100vh;
+    width: 100%;
+}
+}
+@media screen and (max-width: 590px){
+
+  
+        
+    .heading h1{
+        font-size: 70px;
+        margin-top: 40px;
+        
+        }
+        .heading h3{
+            font-size: 30px;
+            margin-top: 40px;
+            
+            }
+#btn-2{
+
+
+margin-bottom: 20px;
+
+
+}
+}
